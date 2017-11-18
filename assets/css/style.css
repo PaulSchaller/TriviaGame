@@ -1,0 +1,98 @@
+body {
+    background: url("../images/StarWars(BackgroundImage).png") no-repeat center center fixed;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover 100% 100%;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+}
+
+#main-container {
+	background-color: red;
+	border: 25px solid black;
+	margin: 20px;
+}
+
+#main-container1 {
+	background-color: red;
+	border: 25px solid black;
+	margin: 20px;
+	display: none;
+}
+
+#main-container2 {
+	background-color: black;
+	color: red;
+	font-size: 50px;
+	display: none;
+}
+
+#main-section {
+	padding-top: 180px;
+	padding-left: 270px;
+}
+
+#main-section1 {
+	border: 25px solid black;
+}
+
+#sidebar-section {
+}
+
+#StarWars-1 {
+	padding: 20px;
+}
+
+#StarWars-2 {
+	padding: 20px}
+
+#StarWars-3 {
+	padding: 20px;
+}
+
+#StarWars-4 {
+	padding: 20px;
+}
+
+#questions {
+	color: black;
+	background-color: white;
+	font-size: 40px;
+	font-style: bold; 
+}
+
+#Record {
+	font-size:  30px;
+	padding-top:  40px;
+}
+
+h1   {
+	color: black;
+	background-color: white;
+	font-size:  100px;
+	text-align: center;
+}
+
+h2  {
+	color: white;
+	background-color: black;
+	font-size:  50px;
+	text-align: center;
+}
+
+h3 {
+	font-size: 60px;
+	text-align: center;
+}
+
+
+
+#footerA  {
+	background-color: black;
+	color: gold;
+	font-size: 20px;
+	text-align: center;
+	font-weight: bold;
+	padding: 25px;
+}

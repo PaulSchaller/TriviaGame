@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Trivia Game</title>
+
+	<!--linking my bootstrap and css style sheets-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	
+</head>
+<body>
+	<!--using bootstrap for the layout of my webpage-->
+	<div class="container">
+	
+	<!--the title of the webpage for the users.  [Star Wars Trivia Game].  the first 'row'-->
+	<div class="row">
+		<div class="col-sm-1"></div>
+		<div class="col-sm-10"></div>
+		<h1>Star Wars Trivia Game</h1>
+		<div class="col-sm-1"></div>
+	</div> 
+
+	<div id="main-container" class="container">
+    		<section class="main-section col-sm-8" id="main-section">
+				<button type="button" class="btn btn-lg" id="start">START</button>
+			</section>
+
+          	<section class="sidebar col-sm-4" id=sidebar-section>
+          		
+						<img class="image-responsive" src="assets/images/StarWars(sidebar)(1).jpg"  id="StarWars-1" alt="StarWars">
+				
+				<div class="row">
+						<img class="image-responsive" src="assets/images/StarWars(sidebar)(2).jpg" id="StarWars-2" alt="StarWars">
+				</div>
+			</section>
+	</div>
+
+    <div id="main-container1" class="container">
+    	<section class="main-section col-sm-8" id="main-section1">
+	        <h2>The time limit is 02:30  <br><br><span id='showTime'>00:00</span></h2>
+
+			<div id="questions" class="container col-sm-12">
+				<div class='row'>
+					<p class="question">1. Who was Echo Seven?</p>
+					<ul class="answers">
+					<input type='radio' name='question1' value='a' id='question1(a)'><label for='question1(a)'>Luke Skywalker</label><br>
+					<input type='radio' name='question1' value='b' id='question1(b)'><label for='question1(b)'>Carlist Rieekan</label><br>
+					<input type='radio' name='question1' value='c' id='question1(c)'><label for='question1(c)'>Han Solo</label><br>
+					<input type='radio' name='question1' value='d' id='question1(d)'><label for='question1(d)'>Princess Leia</label><br>
+					</ul>
+				</div>
+				<br><br>
+				<div class="row">
+					<p class="question">2.  Who was Rogue Leader in the Battle of Hoth?</p>
+					<ul class="answers">
+					<input type='radio' name='question2' value='a' id='question2(a)'><label for='question2(a)'>Han Solo</label><br>
+					<input type='radio' name='question2' value='b' id='question2(b)'><label for='question2(b)'>Wedge Antilles</label><br>
+					<input type='radio' name='question2' value='c' id='question2(c)'><label for='question2(c)'>Cal Alder</label><br>
+					<input type='radio' name='question2' value='d' id='question2(d)'><label for='question2(d)'>Luke Skywalker</label><br>
+					</ul>
+				</div>
+				<br><br>
+				<div class="row">
+					<p class="question">3.  What mission did Princess Leia give Obi-Wan Kenobi?</p>
+					<ul class="answers">
+					<input type='radio' name='question3' value='a' id='question3(a)'><label for='question3(a)'>To destroy the Death Star</label><br>
+					<input type='radio' name='question3' value='b' id='question3(b)'><label for='question3(b)'>To train Luke Skywalker as a Jedi</label><br>
+					<input type='radio' name='question3' value='c' id='question3(c)'><label for='question3(c)'>To take R2-D2 to Alderaan</label><br>
+					<input type='radio' name='question3' value='d' id='question3(d)'><label for='question3(d)'>To defeat Darth Vader</label><br>
+					</ul>
+				</div>
+				<br><br>
+				<div class="row">
+					<p class="question">4.  According to C-3PO, in how many locations was the tractor beam coupled to the main reactor on the Death Star?</p>
+					<ul class="answers">
+					<input type='radio' name='question4' value='a' id='question4(a)'><label for='question4(a)'>6</label><br>
+					<input type='radio' name='question4' value='b' id='question4(b)'><label for='question4(b)'>7</label><br>
+					<input type='radio' name='question4' value='c' id='question4(c)'><label for='question4(c)'>9</label><br>
+					<input type='radio' name='question4' value='d' id='question4(d)'><label for='question4(d)'>8</label><br>
+					</ul>
+				</div>
+				<br><br>
+				<div class="row">
+					<p class="question">5.  What was Luke Skywalker referring to when he said "What a piece of junk!"?</p>
+					<ul class="answers">
+					<input type='radio' name='question5' value='a' id='question5(a)'><label for='question5(a)'>His landspeeder</label><br>
+					<input type='radio' name='question5' value='b' id='question5(b)'><label for='question5(b)'>The Millennium Falcon</label><br>
+					<input type='radio' name='question5' value='c' id='question5(c)'><label for='question5(c)'>The Death Star</label><br>
+					<input type='radio' name='question5' value='d' id='question5(d)'><label for='question5(d)'>His X-wing</label><br>
+					</ul>
+				</div>
+				<br><br>
+				<div class="row">
+					<p class="question">6.  Who exclaimed, "Into the garbage chute, fly boy!"?</p>
+					<ul class="answers">
+					<input type='radio' name='question2' value='a' id='question2(a)'><label for='question2(a)'>Han Solo</label><br>
+					<input type='radio' name='question2' value='b' id='question2(b)'><label for='question2(b)'>C-3PO</label><br>
+					<input type='radio' name='question2' value='c' id='question2(c)'><label for='question2(c)'>Luke Skywalker</label><br>
+					<input type='radio' name='question2' value='d' id='question2(d)'><label for='question2(d)'>Princess Leia</label><br>
+					</ul>
+				</div>
+				<br><br>
+				<div class="row">
+					<p class="question">7.  Who said, "He is as clumsy as he is stupid"?</p>
+					<ul class="answers">
+					<input type='radio' name='question7' value='a' id='question7(a)'><label for='question7(a)'>The Emperor</label><br>
+					<input type='radio' name='question7' value='b' id='question7(b)'><label for='question7(b)'>Darth Vader</label><br>
+					<input type='radio' name='question7' value='c' id='question7(c)'><label for='question7(c)'>Captain Needa</label><br>
+					<input type='radio' name='question7' value='d' id='question7(d)'><label for='question7(d)'>Admiral Ozell</label><br>
+					</ul>
+				</div>
+				<br><br>
+				<div class="row">
+					<p class="question">8.  Whom did R2-D2 tell Luke Skywalker he belonged to?</p>
+					<ul class="answers">
+					<input type='radio' name='question8' value='a' id='question8(a)'><label for='question8(a)'>Princess Leia</label><br>
+					<input type='radio' name='question8' value='b' id='question8(b)'><label for='question8(b)'>Owen Lars</label><br>
+					<input type='radio' name='question8' value='c' id='question8(c)'><label for='question8(c)'>Obi-Wan Kenobi</label><br>
+					<input type='radio' name='question8' value='d' id='question8(d)'><label for='question8(d)'>Padme Amidala</label><br>
+					</ul>
+				</div>
+				<br><br>
+				<div class="row">
+					<p class="question">9.  What did Luke Skywalker say Han Solo was best at when Han refused to help battle the Death Star?</p>
+					<ul class="answers">
+					<input type='radio' name='question2' value='a' id='question2(a)'><label for='question2(a)'>being a loser</label><br>
+					<input type='radio' name='question2' value='b' id='question2(b)'><label for='question2(b)'>running away from problems</label><br>
+					<input type='radio' name='question2' value='c' id='question2(c)'><label for='question2(c)'>being selfish</label><br>
+					<input type='radio' name='question2' value='d' id='question2(d)'><label for='question2(d)'>taking care of himself</label><br>
+					</ul>
+				</div>
+				<br><br>
+				<div class="row">
+					<p class="question">10.  Who asked, "Who's the more foolish--the fool, or the fool who follows him?"?</p>
+					<ul class="answers">
+					<input type='radio' name='question2' value='a' id='question2(a)'><label for='question2(a)'>Obi-Wan Kenobi</label><br>
+					<input type='radio' name='question2' value='b' id='question2(b)'><label for='question2(b)'>Grand Moff Tarkin</label><br>
+					<input type='radio' name='question2' value='c' id='question2(c)'><label for='question2(c)'>Han Solo</label><br>
+					<input type='radio' name='question2' value='d' id='question2(d)'><label for='question2(d)'>Luke Skywalker</label><br>
+					</ul>
+				</div>
+				<br><br>
+				<div class="row">
+					<p class="question">11.  Who  said, "Good against remotes is one thing.  Good against the living--that's something else"?</p>
+					<ul class="answers">
+					<input type='radio' name='question2' value='a' id='question2(a)'><label for='question2(a)'>Han Solo</label><br>
+					<input type='radio' name='question2' value='b' id='question2(b)'><label for='question2(b)'>Luke Skywalker</label><br>
+					<input type='radio' name='question2' value='c' id='question2(c)'><label for='question2(c)'>Obi-Wan Kenobi</label><br>
+					<input type='radio' name='question2' value='d' id='question2(d)'><label for='question2(d)'>Princess Leia</label><br>
+					</ul>
+				</div>
+				<br><br>
+				<div class="row">
+					<p class="question">12.  What did C-3PO think he had found when he spotted the sandcrawler from afar?</p>
+					<ul class="answers">
+					<input type='radio' name='question2' value='a' id='question2(a)'><label for='question2(a)'>a settlement</label><br>
+					<input type='radio' name='question2' value='b' id='question2(b)'><label for='question2(b)'>an oasis!</label><br>
+					<input type='radio' name='question2' value='c' id='question2(c)'><label for='question2(c)'>a transport</label><br>
+					<input type='radio' name='question2' value='d' id='question2(d)'><label for='question2(d)'>a village</label><br>
+					</ul>
+				</div>
+				<br><br>
+
+	        	<button type="button" class="btn btn-lg" id="reset">RESET</button>
+	        	<button type="button" class="btn btn-lg" id="stop">STOP</button>
+
+		</section>
+
+          <section class="sidebar col-sm-4" id=sidebar-section>
+          	<div class="row">
+				<img class="image-responsive" src="assets/images/StarWars(sidebar)(3).jpg"  id="StarWars-3" alt="StarWars">
+			</div>
+			<div class="row">
+				<img class="image-responsive" src="assets/images/StarWars(sidebar)(4).jpg" id="StarWars-4" alt="StarWars">
+			</div>
+		</section>
+	</div>
+
+
+	<div id="main-container2" class="container">
+		<div class="row">
+			<div class="col-sm-3"></div>
+			<div class="col-sm-6"></div>
+				<h3>The Results</h3>
+			<div class="col-sm-3"></div>
+		</div>
+		
+		<div class="row" id='Record'>
+			Total Answered Correctly:  <span id='answeredCorrectly'></span>   <br>
+			Total Unanswered:  <span id='unanswered'></span>    <br>
+			Total Answered Wrong:  <span id='wrongAnswers'></span>   
+		</div>
+	</div>
+
+
+
+
+	<!--sticky footer-->
+	<div class="push"></div>
+
+	<!--my footer.-->	
+	<footer>
+		<div class="container" id="footerA">
+      		Copyright &copy; 2017 Paul Schaller
+      	</div>
+     </footer>
+
+
+     <!-- to the jQuery library-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+
+
+</body>
+</html>
+
+ 
+
