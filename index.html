@@ -10,7 +10,6 @@
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
   	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	
 </head>
@@ -25,7 +24,7 @@
 		<h1>Star Wars Trivia Game</h1>
 		<div class="col-sm-1"></div>
 	</div> 
-
+<!--initial webpage.  I have the user click the start button.-->
 	<div id="main-container" class="container">
     		<section class="main-section col-sm-8" id="main-section">
 				<button type="button" class="btn btn-lg" id="start">START</button>
@@ -41,10 +40,11 @@
 			</section>
 	</div>
 
+<!--the second webpage.  it contains the clock and the trivia questions.-->
     <div id="main-container1" class="container">
     	<section class="main-section col-sm-8" id="main-section1">
 	        <h2>The time limit is 02:30  <br><br><span id='showTime'>00:00</span></h2>
-
+<!--entering in the trivia questions-->
 			<div id="questions" class="container col-sm-12">
 				<div class='row'>
 					<p class="question">1. Who was Echo Seven?</p>
@@ -99,10 +99,10 @@
 				<div class="row">
 					<p class="question">6.  Who exclaimed, "Into the garbage chute, fly boy!"?</p>
 					<ul class="answers">
-					<input type='radio' name='question2' value='a' id='question2(a)'><label for='question2(a)'>Han Solo</label><br>
-					<input type='radio' name='question2' value='b' id='question2(b)'><label for='question2(b)'>C-3PO</label><br>
-					<input type='radio' name='question2' value='c' id='question2(c)'><label for='question2(c)'>Luke Skywalker</label><br>
-					<input type='radio' name='question2' value='d' id='question2(d)'><label for='question2(d)'>Princess Leia</label><br>
+					<input type='radio' name='question6' value='a' id='question6(a)'><label for='question6(a)'>Han Solo</label><br>
+					<input type='radio' name='question6' value='b' id='question6(b)'><label for='question6(b)'>C-3PO</label><br>
+					<input type='radio' name='question6' value='c' id='question6(c)'><label for='question6(c)'>Luke Skywalker</label><br>
+					<input type='radio' name='question6' value='d' id='question6(d)'><label for='question6(d)'>Princess Leia</label><br>
 					</ul>
 				</div>
 				<br><br>
@@ -129,46 +129,46 @@
 				<div class="row">
 					<p class="question">9.  What did Luke Skywalker say Han Solo was best at when Han refused to help battle the Death Star?</p>
 					<ul class="answers">
-					<input type='radio' name='question2' value='a' id='question2(a)'><label for='question2(a)'>being a loser</label><br>
-					<input type='radio' name='question2' value='b' id='question2(b)'><label for='question2(b)'>running away from problems</label><br>
-					<input type='radio' name='question2' value='c' id='question2(c)'><label for='question2(c)'>being selfish</label><br>
-					<input type='radio' name='question2' value='d' id='question2(d)'><label for='question2(d)'>taking care of himself</label><br>
+					<input type='radio' name='question9' value='a' id='question9(a)'><label for='question9(a)'>being a loser</label><br>
+					<input type='radio' name='question9' value='b' id='question9(b)'><label for='question9(b)'>running away from problems</label><br>
+					<input type='radio' name='question9' value='c' id='question9(c)'><label for='question9(c)'>being selfish</label><br>
+					<input type='radio' name='question9' value='d' id='question9(d)'><label for='question9(d)'>taking care of himself</label><br>
 					</ul>
 				</div>
 				<br><br>
 				<div class="row">
 					<p class="question">10.  Who asked, "Who's the more foolish--the fool, or the fool who follows him?"?</p>
 					<ul class="answers">
-					<input type='radio' name='question2' value='a' id='question2(a)'><label for='question2(a)'>Obi-Wan Kenobi</label><br>
-					<input type='radio' name='question2' value='b' id='question2(b)'><label for='question2(b)'>Grand Moff Tarkin</label><br>
-					<input type='radio' name='question2' value='c' id='question2(c)'><label for='question2(c)'>Han Solo</label><br>
-					<input type='radio' name='question2' value='d' id='question2(d)'><label for='question2(d)'>Luke Skywalker</label><br>
+					<input type='radio' name='question10' value='a' id='question10(a)'><label for='question10(a)'>Obi-Wan Kenobi</label><br>
+					<input type='radio' name='question10' value='b' id='question10(b)'><label for='question10(b)'>Grand Moff Tarkin</label><br>
+					<input type='radio' name='question10' value='c' id='question10(c)'><label for='question10(c)'>Han Solo</label><br>
+					<input type='radio' name='question10' value='d' id='question10(d)'><label for='question10(d)'>Luke Skywalker</label><br>
 					</ul>
 				</div>
 				<br><br>
 				<div class="row">
 					<p class="question">11.  Who  said, "Good against remotes is one thing.  Good against the living--that's something else"?</p>
 					<ul class="answers">
-					<input type='radio' name='question2' value='a' id='question2(a)'><label for='question2(a)'>Han Solo</label><br>
-					<input type='radio' name='question2' value='b' id='question2(b)'><label for='question2(b)'>Luke Skywalker</label><br>
-					<input type='radio' name='question2' value='c' id='question2(c)'><label for='question2(c)'>Obi-Wan Kenobi</label><br>
-					<input type='radio' name='question2' value='d' id='question2(d)'><label for='question2(d)'>Princess Leia</label><br>
+					<input type='radio' name='question11' value='a' id='question11(a)'><label for='question11(a)'>Han Solo</label><br>
+					<input type='radio' name='question11' value='b' id='question11(b)'><label for='question11(b)'>Luke Skywalker</label><br>
+					<input type='radio' name='question11' value='c' id='question11(c)'><label for='question11(c)'>Obi-Wan Kenobi</label><br>
+					<input type='radio' name='question11' value='d' id='question11(d)'><label for='question11(d)'>Princess Leia</label><br>
 					</ul>
 				</div>
 				<br><br>
 				<div class="row">
 					<p class="question">12.  What did C-3PO think he had found when he spotted the sandcrawler from afar?</p>
 					<ul class="answers">
-					<input type='radio' name='question2' value='a' id='question2(a)'><label for='question2(a)'>a settlement</label><br>
-					<input type='radio' name='question2' value='b' id='question2(b)'><label for='question2(b)'>an oasis!</label><br>
-					<input type='radio' name='question2' value='c' id='question2(c)'><label for='question2(c)'>a transport</label><br>
-					<input type='radio' name='question2' value='d' id='question2(d)'><label for='question2(d)'>a village</label><br>
+					<input type='radio' name='question12' value='a' id='question12(a)'><label for='question12(a)'>a settlement</label><br>
+					<input type='radio' name='question12' value='b' id='question12(b)'><label for='question12(b)'>an oasis!</label><br>
+					<input type='radio' name='question12' value='c' id='question12(c)'><label for='question12(c)'>a transport</label><br>
+					<input type='radio' name='question12' value='d' id='question12(d)'><label for='question12(d)'>a village</label><br>
 					</ul>
 				</div>
 				<br><br>
-
+<!--my submit and reset buttons.  the user can submit his answers to the trivia questions.-->
 	        	<button type="button" class="btn btn-lg" id="reset">RESET</button>
-	        	<button type="button" class="btn btn-lg" id="stop">STOP</button>
+	        	<button type="button" class="btn btn-lg" id="stop">SUBMIT</button>
 
 		</section>
 
@@ -182,7 +182,7 @@
 		</section>
 	</div>
 
-
+<!--set up a webpage for the results of the graded trivia quiz.-->
 	<div id="main-container2" class="container">
 		<div class="row">
 			<div class="col-sm-3"></div>
@@ -196,6 +196,11 @@
 			Total Unanswered:  <span id='unanswered'></span>    <br>
 			Total Answered Wrong:  <span id='wrongAnswers'></span>   
 		</div>
+		
+		<div class="row">
+			<button type="button" class="btn btn-lg" id="resetA">RESET</button>
+		</div>
+
 	</div>
 
 
