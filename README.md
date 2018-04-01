@@ -1,13 +1,14 @@
 # Trivia Game
 
-### This program is a trivia game.  The player is given a test of trivia questions that is answered by the player.  
-### The test is graded and results displayed.
+### This program is a trivia game.  The player is given a test of trivia questions that is answered 
+### by the player.  The test is graded and results displayed.
 
-## The trivia questions are on the topic of the movie *Star Wars*.  There are twelve questions on the test for the
-## player to answer.  After the questions are answered, the player submits the test to be graded.  
+### The trivia questions are on the topic of the movie *Star Wars*.  
+### There are twelve questions on the test for the player to answer.  
+### After the questions are answered, the player submits the test to be graded.  
 
-## The user has two minutes and 30 seconds to answer the questions.  After the time limit, the test ends.  The 
-## test is then graded.
+### The user has two minutes and 30 seconds to answer the questions.  After the time limit, 
+### the test ends.  The test is then graded.
 
 I used javascript, jQuery, html, and css in the development of this game.
 
