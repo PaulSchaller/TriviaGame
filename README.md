@@ -1,6 +1,6 @@
-# TriviaGame
+# Trivia Game
 
-### This program is a trivia game.  The user is given a test of trivia questions that is answered by the player.  
+### This program is a trivia game.  The player is given a test of trivia questions that is answered by the player.  
 ### The test is graded and results displayed.
 
 ## The trivia questions are on the topic of the movie *Star Wars*.  There are twelve questions on the test for the
