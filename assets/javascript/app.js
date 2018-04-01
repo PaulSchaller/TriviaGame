@@ -15,7 +15,7 @@ $(document).ready(function(){
 
   	time: 0,
 
-//this is where I was attempting to get the resuts of the quiz and evaluate and broadcast the results.  I was not successful. 
+//get the resuts of the quiz and evaluate and broadcast the results
     computeResults:  function() {
 
 //I set up three variables to receive the results of the user inputs on the quiz
@@ -23,86 +23,85 @@ $(document).ready(function(){
       var missed = 0;
       var correct = 0;
 
-//this was to check questions for those that were not answered during the quiz.  
-      if (!$("input[@name=question1]:checked").val()){
+//check questions for those that were not answered during the quiz.  
+      if (!$("input[name=question1]:checked").val()){
         vacant++;
       }
-      if (!$("input[@name=question2]:checked").val()){
+      if (!$("input[name=question2]:checked").val()){
         vacant++;
       }
-      if (!$("input[@name=question3]:checked").val()){
+      if (!$("input[name=question3]:checked").val()){
         vacant++;
       }
-      if (!$("input[@name=question4]:checked").val()){
+      if (!$("input[name=question4]:checked").val()){
         vacant++;
       }
-      if (!$("input[@name=question5]:checked").val()){
+      if (!$("input[name=question5]:checked").val()){
         vacant++;
       }
-      if (!$("input[@name=question6]:checked").val()){
+      if (!$("input[name=question6]:checked").val()){
         vacant++;
       }
-      if (!$("input[@name=question7]:checked").val()){
+      if (!$("input[name=question7]:checked").val()){
         vacant++;
       }
-      if (!$("input[@name=question8]:checked").val()){
+      if (!$("input[name=question8]:checked").val()){
         vacant++;
       }
-      if (!$("input[@name=question9]:checked").val()){
+      if (!$("input[name=question9]:checked").val()){
         vacant++;
       }
-      if (!$("input[@name=question10]:checked").val()){
+      if (!$("input[name=question10]:checked").val()){
         vacant++;
       }
-      if (!$("input[@name=question11]:checked").val()){
+      if (!$("input[name=question11]:checked").val()){
         vacant++;
       }
-      if (!$("input[@name=question12]:checked").val()){
+      if (!$("input[name=question12]:checked").val()){
         vacant++;
       }
-
 
 
 //the letters on the left (a, b, c, d) are the correct answers to the questions.  I am trying to determine which questions were answered correctly
-      if ($("input[@name=question1]:checked").val() == 'c'){
+      if ($("input[name=question1]:checked").val() == 'c'){
         correct++;
       }
-      if ($("input[@name=question2]:checked").val() == 'd'){
+      if ($("input[name=question2]:checked").val() == 'd'){
         correct++;
       }
-      if ($("input[@name=question3]:checked").val() == 'c'){
+      if ($("input[name=question3]:checked").val() == 'c'){
         correct++;
       }
-      if ($("input[@name=question4]:checked").val() == 'b'){
+      if ($("input[name=question4]:checked").val() == 'b'){
         correct++;
       }
-      if ($("input[@name=question5]:checked").val() == 'b'){
+      if ($("input[name=question5]:checked").val() == 'b'){
         correct++;
       }
-      if ($("input[@name=question6]:checked").val() == 'd'){
+      if ($("input[name=question6]:checked").val() == 'd'){
         correct++;
       }
-      if ($("input[@name=question7]:checked").val() == 'b'){
+      if ($("input[name=question7]:checked").val() == 'b'){
         correct++;
       }
-      if ($("input[@name=question8]:checked").val() == 'c'){
+      if ($("input[name=question8]:checked").val() == 'c'){
         correct++;
       }
-      if ($("input[@name=question9]:checked").val() == 'd'){
+      if ($("input[name=question9]:checked").val() == 'd'){
         correct++;
       }
-      if ($("input[@name=question10]:checked").val() == 'a'){
+      if ($("input[name=question10]:checked").val() == 'a'){
         correct++;
       }
-      if ($("input[@name=question11]:checked").val() == 'a'){
+      if ($("input[name=question11]:checked").val() == 'a'){
         correct++;
       }
-      if ($("input[@name=question12]:checked").val() == 'c'){
+      if ($("input[name=question12]:checked").val() == 'c'){
         correct++;
       }
 
 //I can calculat the # of missed questions by subtracting the correct and unanswered questions from  12 (12 is the number of questions on the quiz).
-      missed = 12 - vacant - correct;n
+      missed = 12 - vacant - correct;
 
 //troubleshooting
       console.log(missed);
@@ -111,8 +110,8 @@ $(document).ready(function(){
 
 //jquery code to manipulate the DOM and broadcast the results of the quiz on a webpage
       $('#answeredCorrectly').text(correct);
-      $('unanswered').text(vacant);
-      $('wrongAnswers').text(missed);
+      $('#unanswered').text(vacant);
+      $('#wrongAnswers').text(missed);
 
     },
 
@@ -142,7 +141,7 @@ $(document).ready(function(){
       clearInterval(counter);
       $('#main-container1').css('display', 'none');
       $('#main-container2').css('display', 'block');
-      computeResults();
+      stopwatch.computeResults();
 	   },
 
 //the stopwatch (timer) of the game
@@ -161,7 +160,7 @@ $(document).ready(function(){
       }
       if (stopwatch.time == 150){
         alert("Time has expired.");
-        this.stop();
+        stopwatch.stop();
       }
     },
 
