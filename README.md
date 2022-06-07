@@ -3,7 +3,7 @@
 ### This program is a trivia game.  The player is given a test of trivia questions that is answered 
 ### by the player.  The test is graded and results displayed.
 
-### The trivia questions are on the topic of the movie *Star Wars*.  
+### The trivia questions are on the topic of *Star Wars*.  
 ### There are twelve questions on the test for the player to answer.  
 ### After the questions are answered, the player submits the test to be graded.  
 
