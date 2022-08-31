@@ -1,5 +1,5 @@
 body {
-    background: url("../images/StarWars(BackgroundImage).png") no-repeat center center fixed;
+    background: url("../images/StarWars(Backgroundimage).png") no-repeat center center fixed;
     z-index: -1;
     background-repeat: no-repeat;
     background-size: cover 100% 100%;
@@ -29,8 +29,8 @@ body {
 }
 
 #main-section {
-	padding-top: 180px;
-	padding-left: 270px;
+	padding-top: 90px;
+	padding-left: 90px;
 }
 
 #main-section1 {
